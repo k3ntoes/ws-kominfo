@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="assets/styles/style.min.css">
+
+    <!-- Material Design Icon -->
+    <link rel="stylesheet" href="assets/fonts/material-design/css/materialdesignicons.css">
+
+    <!-- mCustomScrollbar -->
+    <link rel="stylesheet" href="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+
+    <!-- Waves Effect -->
+    <link rel="stylesheet" href="assets/plugin/waves/waves.min.css">
+
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" href="assets/plugin/sweet-alert/sweetalert.css">
+
+    <!-- Percent Circle -->
+    <link rel="stylesheet" href="assets/plugin/percircle/css/percircle.css">
+
+    <!-- Chartist Chart -->
+    <link rel="stylesheet" href="assets/plugin/chart/chartist/chartist.min.css">
+
+    <!-- FullCalendar -->
+    <link rel="stylesheet" href="assets/plugin/fullcalendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="assets/plugin/fullcalendar/fullcalendar.print.css" media='print'>
+
+    <!-- Color Picker -->
+    <link rel="stylesheet" href="assets/color-switcher/color-switcher.min.css">
+
+    <!-- Loader Modal -->
+    <link rel="stylesheet" href="assets/custom/css/cus-loader.css">
+
+
+</head>
+
+<body>
+    <div class="main-menu">
+        <header class="header">
+            <a href="index.html" class="logo">Zeiss</a>
+            <button type="button" class="button-close fa fa-times js__menu_close"></button>
+        </header>
+        <!-- /.header -->
+        <div class="content">
+
+            <div class="navigation">
+                <ul class="menu js__accordion">
+                    <li>
+                        <a class="waves-effect parent-item js__control" href="#"><i
+                                class="menu-icon mdi mdi-flower"></i><span>Pasien</span><span
+                                class="menu-arrow fa fa-angle-down"></span></a>
+                        <ul class="sub-menu js__content">
+                            <li><a href="#ListPasien">List Pasien</a></li>
+                            <li><a href="#UpdatePasien">Update Pasien</a></li>
+                            <li><a href="#CreatePasien">Create Pasien</a></li>
+                            <li><a href="#DeletePasien">Delete Pasien</a></li>
+                            <li><a href="#LastRm">Last Rm</a></li>
+                            <li><a href="#FindByRmNik">Find By Rm / Nik</a></li>
+                        </ul>
+                        <!-- /.sub-menu js__content -->
+                    </li>
+                    <li>
+                        <a class="waves-effect parent-item js__control" href="#"><i
+                                class="menu-icon mdi mdi-flower"></i><span>Pendaftaran</span><span
+                                class="menu-arrow fa fa-angle-down"></span></a>
+                        <ul class="sub-menu js__content">
+                            <li><a href="#CreateNoPendaftaran">Create No Pendaftaran</a></li>
+                            <li><a href="#PairPasienKePendaftaran">Pair Pasien Ke Pendaftaran</a></li>
+                        </ul>
+                        <!-- /.sub-menu js__content -->
+                    </li>
+                    <li>
+                        <a class="waves-effect parent-item js__control" href="#"><i
+                                class="menu-icon mdi mdi-flower"></i><span>Antrean</span><span
+                                class="menu-arrow fa fa-angle-down"></span></a>
+                        <ul class="sub-menu js__content">
+                            <li><a href="#ListAntreanPerTanggal">List Antrean Per Tanggal</a></li>
+                            <li><a href="#PanggilAntrean">Panggil Antrean</a></li>
+                            <li><a href="#SkipAntrean">Skip Antrean</a></li>
+                            <li><a href="#VerifAntrean">VerifAntrean</a></li>
+                        </ul>
+                        <!-- /.sub-menu js__content -->
+                    </li>
+                </ul>
+                <!-- /.menu js__accordion -->
+            </div>
+            <!-- /.navigation -->
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.main-menu -->
+
+    <div id="wrapper">
+        <div class="main-content" id="konten">
+            ABCD
+        </div>
+    </div>
+
+    <!-- Loader Modal -->
+    <div class="modal fade" id="loaderModal" tabindex="-1" role="dialog" aria-labelledby="viewModal" aria-hidden="true"
+        data-backdrop="static">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="judul">Harap Tunggu...</h5>
+                </div>
+                <div class="modal-body" style="height: 180px;">
+                    <!--<div class="container">-->
+                    <div class="row">
+                        <div id="loader">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="lading"></div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/scripts/jquery.min.js"></script>
+        <script src="assets/scripts/modernizr.min.js"></script>
+        <script src="assets/plugin/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="assets/plugin/nprogress/nprogress.js"></script>
+        <script src="assets/plugin/sweet-alert/sweetalert.min.js"></script>
+        <script src="assets/plugin/waves/waves.min.js"></script>
+        <!-- Full Screen Plugin -->
+        <script src="assets/plugin/fullscreen/jquery.fullscreen-min.js"></script>
+
+        <!-- Google Chart -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+        <!-- chart.js Chart -->
+        <script src="assets/plugin/chart/chartjs/Chart.bundle.min.js"></script>
+        <script src="assets/scripts/chart.chartjs.init.min.js"></script>
+
+        <!-- FullCalendar -->
+        <script src="assets/plugin/moment/moment.js"></script>
+        <script src="assets/plugin/fullcalendar/fullcalendar.min.js"></script>
+        <script src="assets/scripts/fullcalendar.init.js"></script>
+
+        <!-- Sparkline Chart -->
+        <script src="assets/plugin/chart/sparkline/jquery.sparkline.min.js"></script>
+        <script src="assets/scripts/chart.sparkline.init.min.js"></script>
+
+        <script src="assets/scripts/main.min.js"></script>
+        <script src="assets/color-switcher/color-switcher.min.js"></script>
+
+        <script>
+            let base_uri = window.location.origin + "/";
+
+            function lua() {
+                var curUri = window.location.hash;
+                return curUri.replace('#', '');
+            };
+
+            async function buka_uri(curUri) {
+                $('#loaderModal').modal('show');
+                try {
+                    const page = await getPage(curUri)
+                    $('#konten').html(page)
+                    $('#loaderModal').modal('hide')
+                } catch (err) {
+                    $('#loaderModal').modal('hide')
+                    alert('Page Not Found!!!')
+                }
+
+            }
+
+            getPage = (curUri) => {
+                return new Promise((resolve, reject) => {
+                    $.get(base_uri + curUri, (data) => { })
+                        .always((data) => {
+                            resolve(data)
+                        }).fail((err) => {
+                            reject(err)
+                        })
+                })
+            }
+
+            function disable_enter() {
+                $('input[type=text]').on("keydown", function (e) {
+                    var keyCode = e.keyCode;
+                    if (keyCode === 13) {
+                        e.preventDefault();
+                        return false;
+                    }
+                });
+            }
+
+            $(document).ready(() => {
+                window.addEventListener('popstate', function (event) {
+                    // Log the state data to the console
+                    buka_uri(lua())
+                });
+            })
+        </script>
+</body>
+
+</html>
